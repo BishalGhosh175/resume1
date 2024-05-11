@@ -4,20 +4,20 @@
 <title>Bishal Ghosh Portfolio</title>
 <style>
 body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
 }
 
 header {
-  background-color: #000;
-  color: #fff;
+  background-color: black;
+  color: white;
   padding: 20px;
   text-align: center;
 }
 
 h1 {
   font-size: 30px;
+  font-weight: bold;
 }
 
 main {
@@ -33,6 +33,14 @@ main {
   padding-left: 20px;
 }
 
+.education {
+  margin-bottom: 20px;
+}
+
+.certifications {
+  margin-bottom: 20px;
+}
+
 .contact {
   margin-top: 20px;
 }
@@ -42,54 +50,109 @@ form {
   flex-direction: column;
 }
 
-input, textarea {
+.image1{
+    display: block;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    border: 1px solid white;
+}
+
+textarea {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
+  border: 1px solid #ccc;
 }
 
 button {
-  background-color: #000;
-  color: #fff;
+  background-color: black;
+  color: white;
   padding: 10px;
   margin-top: 10px;
+  cursor: pointer;
 }
 </style>
 </head>
 <body>
 <header>
 <h1>Bishal Ghosh Portfolio</h1>
+<img src="https://drive.google.com/file/d/1L97qMKfzuNz4X5Qb45NGE2yYyLTKBn_B/view?usp=drive_link" class="image1">
 </header>
 
 <main>
-<section class="about">
+<div class="about">
 <h2>About Me</h2>
 <p>I am a student pursuing a Bachelor of Computer Application at Techno India Hooghly. I am interested in web development and problem-solving.</p>
-</section>
+</div>
 
-<section class="skills">
+<div class="education">
+<h2>Education</h2>
+<ul>
+<li>Bachelor of Computer Application, Techno India Hooghly (sgpa: 8.69 up till sem 4)</li>
+<li>Secondary School, Vivekananda English Academy (Percentage: 72.83)</li>
+<li>Primary School, Gospel Home School (Percentage: 80%)</li>
+</ul>
+</div>
+
+<div class="skills">
 <h2>Skills</h2>
 <ul>
-<li>Web Design (HTML, CSS, JavaScript)</li>
-<li>Problem-Solving</li>
-<li>Machine learning</li>
-<li>Python, Java, C++</li>
-<li>Oracle, MySQL</li>
-<li>Strong Communication</li>
-<li>shell-programming<li>
-<li>PHP</li>
+  <li>Web Design (HTML, CSS, JavaScript)</li>
+  <li>Problem-Solving</li>
+  <li>Machine learning</li>
+  <li>Python, Java, C++</li>
+  <li>Oracle, MySQL</li>
+  <li>Strong Communication</li>
+  <li>shell-programming<li>
+  <li>PHP</li>
 </ul>
-</section>
+</div>
 
-<section class="contact">
+<div class="certifications">
+  <h2>Certifications</h2>
+  <ul>
+    <li><a href="https://drive.google.com/file/d/1m35iqsy_amyCeO0-q6ptLQI50wPfZo9_/view?usp=drive_link">Certificate of Completion (HTML, CSS, JavaScript), Techno India Hooghly</a></li>
+    <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/UGK6YDJULC96">Google IT Automation with Python Specialization, Coursera</a></li>
+    <li><a href="https://www.hackerrank.com/certificates/c0cf5fdd3e41">Python Basic (certificate), HackerRank</a></li>
+    <li><a href="https://www.hackerrank.com/certificates/6f0221988c2b">CSS Basic (certificate), HackerRank</a></li>
+</ul>
+</div>
+
+<div class="projects">
+  <h2>Projects</h2>
+  <ul>
+    <li><a href="https://github.com/BishalGhosh175/Library-management">Library Manegement System</a></li>
+    <li>download Library-management user manual: <a href="https://drive.google.com/file/d/1IWZbqiIncWnGMtvyC8xELaEDsG8OJN8_/view?usp=sharing">click here</a></li>
+    <li>I created the resume webpage you are viewing</li>
+  </ul>
+</div>
+
+<div id="contact">
+  <h2>Contact Information</h3>
+  <ul>
+    <li>Email: bishalg174@gmail.com</li>
+    <li>Phone: 9073076056</li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/bishal-ghosh-b912851b4/">https://www.linkedin.com/in/bishal-ghosh-b912851b4/</a></li>
+  </ul>
+</div>
+
+<div class="contact">
 <h2>Contact Me</h2>
 <form action="mailto:bishalg174@gmail.com" method="post">
-<input type="text" name="name" placeholder="Your Name">
-<input type="email" name="email" placeholder="Your Email">
-<textarea name="message" placeholder="Your Message"></textarea>
+  <input type="text" placeholder="Your Name">
+  <input type="email" placeholder="Your Email">
+  <textarea name="message" placeholder="Your Message"></textarea>
 <button type="submit">Send Message</button>
 </form>
-</section>
+</div>
 </main>
 
 </body>
